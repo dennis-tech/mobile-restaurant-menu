@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Smythe&display=swap" rel="stylesheet">
+
+    <title>Mobile Restaurant Menu</title>
+  </head>
+  <body>
+
+    <header>
+
+        <div class="hero_branding">
+          <h1>Jimmy’s Diner</h1>
+          <h2>The best burgers and pizzas in town.</h2>
+        </div>
+
+    </header>
+
+    <div class="item" id="item"></div>
+
+    <div id="order"></div>
+
+    <section class="payment_form" id="payment_form">
+      <h3 class="payment_form_heading">Enter Card details</h3>
+      <form id="payment_form_data">
+        <div class="payment_form_details">
+          <input type="text" name="name" placeholder="Enter your name" required>
+          <input type="number" name="cardNumber" placeholder="Enter Card Number" required>
+          <input type="number" name="cvv" placeholder="Enter CVV" required>
+          <button type="submit" class="payment_btn" id="payment_btn">Pay</button>
+        </div>
+      </form>
+    </section>
+
+    <div>
+       <p class="order_confirmation" id="order_confirmation"></p>
+    </div>
+
+    <script  src="index.js"  type="module"></script>
+  </body>
+</html>
+
+
